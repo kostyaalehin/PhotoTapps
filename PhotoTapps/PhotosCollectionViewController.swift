@@ -37,6 +37,25 @@ class PhotosCollectionViewController: UICollectionViewController {
 
 }
 
-extension PhotosCollectionViewController: UICollectionViewCompositionalLayout {
-    
+extension PhotosCollectionViewController: UICollectionViewDelegateFlowLayout {
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let itemsForRow: CGFloat = 2
+        let peddingWigth = 20 * (itemsForRow + 1)
+        let availableWidth = collectionView.frame.width - peddingWigth
+        let widhtPerItem = availableWidth / itemsForRow
+        return CGSize(width: widhtPerItem, height: widhtPerItem)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 20
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 20
+    }
 }
