@@ -14,6 +14,7 @@
 		147D02AF284F7D1700F9C864 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147D02AD284F7D1700F9C864 /* LaunchScreen.storyboard */; };
 		147D02B9284F7DCD00F9C864 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D02B8284F7DCD00F9C864 /* PhotosCollectionViewController.swift */; };
 		147D02BB284F825400F9C864 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D02BA284F825400F9C864 /* PhotoCollectionViewCell.swift */; };
+		14CC2B93284FE4AC0090D8E9 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CC2B92284FE4AC0090D8E9 /* PhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		147D02B0284F7D1700F9C864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		147D02B8284F7DCD00F9C864 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
 		147D02BA284F825400F9C864 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		14CC2B92284FE4AC0090D8E9 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				147D02A4284F7D1600F9C864 /* SceneDelegate.swift */,
 				147D02B8284F7DCD00F9C864 /* PhotosCollectionViewController.swift */,
 				147D02BA284F825400F9C864 /* PhotoCollectionViewCell.swift */,
+				14CC2B92284FE4AC0090D8E9 /* PhotoViewController.swift */,
 				147D02A8284F7D1600F9C864 /* Main.storyboard */,
 				147D02AB284F7D1700F9C864 /* Assets.xcassets */,
 				147D02AD284F7D1700F9C864 /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 				147D02BB284F825400F9C864 /* PhotoCollectionViewCell.swift in Sources */,
 				147D02A5284F7D1600F9C864 /* SceneDelegate.swift in Sources */,
 				147D02B9284F7DCD00F9C864 /* PhotosCollectionViewController.swift in Sources */,
+				14CC2B93284FE4AC0090D8E9 /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
