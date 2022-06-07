@@ -13,6 +13,7 @@
 		147D02AC284F7D1700F9C864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147D02AB284F7D1700F9C864 /* Assets.xcassets */; };
 		147D02AF284F7D1700F9C864 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147D02AD284F7D1700F9C864 /* LaunchScreen.storyboard */; };
 		147D02B9284F7DCD00F9C864 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D02B8284F7DCD00F9C864 /* PhotosCollectionViewController.swift */; };
+		147D02BB284F825400F9C864 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D02BA284F825400F9C864 /* PhotoCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		147D02AE284F7D1700F9C864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		147D02B0284F7D1700F9C864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		147D02B8284F7DCD00F9C864 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
+		147D02BA284F825400F9C864 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				147D02A2284F7D1600F9C864 /* AppDelegate.swift */,
 				147D02A4284F7D1600F9C864 /* SceneDelegate.swift */,
 				147D02B8284F7DCD00F9C864 /* PhotosCollectionViewController.swift */,
+				147D02BA284F825400F9C864 /* PhotoCollectionViewCell.swift */,
 				147D02A8284F7D1600F9C864 /* Main.storyboard */,
 				147D02AB284F7D1700F9C864 /* Assets.xcassets */,
 				147D02AD284F7D1700F9C864 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				147D02A3284F7D1600F9C864 /* AppDelegate.swift in Sources */,
+				147D02BB284F825400F9C864 /* PhotoCollectionViewCell.swift in Sources */,
 				147D02A5284F7D1600F9C864 /* SceneDelegate.swift in Sources */,
 				147D02B9284F7DCD00F9C864 /* PhotosCollectionViewController.swift in Sources */,
 			);
