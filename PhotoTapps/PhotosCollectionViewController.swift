@@ -9,8 +9,21 @@ import UIKit
 
 class PhotosCollectionViewController: UICollectionViewController {
 
+    let itemsForRow: CGFloat = 2
+    let sectionInset = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+//        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+//        layout.itemSize = CGSize(width: 70, height: 30)
+//        layout.sectionInset = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+//        layout.minimumLineSpacing = 1
+//        layout.minimumInteritemSpacing = 1
+//        layout.scrollDirection = .vertical
+//
+//        layout.collectionView?.showsVerticalScrollIndicator = false
 
     }
 
@@ -40,22 +53,21 @@ class PhotosCollectionViewController: UICollectionViewController {
 extension PhotosCollectionViewController: UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let itemsForRow: CGFloat = 2
-        let peddingWigth = 20 * (itemsForRow + 1)
+        let peddingWigth = sectionInset.left * (itemsForRow + 1)
         let availableWidth = collectionView.frame.width - peddingWigth
         let widhtPerItem = availableWidth / itemsForRow
         return CGSize(width: widhtPerItem, height: widhtPerItem)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+        return sectionInset
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 20
+        return sectionInset.left
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 20
+        return sectionInset.left
     }
 }
